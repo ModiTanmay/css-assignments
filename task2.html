@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title></title>
+
+	<style type="text/css">
+		div
+		{
+			height: 50px;
+			width: 200px;
+			background-color: black;
+			font-size: 15px;
+			font-weight:bold;
+			color: White;
+			text-align: center;
+			line-height: 70px;
+			z-index: 0;
+			position: relative;
+			overflow: hidden;
+			margin: 200px auto;
+		}
+
+		div::after
+		{
+			contain: "";
+			position: absolute;
+			bottom: 0;
+			left: -200%;
+			height: 10px;
+			width: 400px;
+			border border-radius: 30px;
+			background: linear-gradient(green,aqua);
+			z-index: -1;
+			transition: 1.0s;
+
+
+		}
+
+		div:hover::after
+		{
+			left: 0%;
+
+		}
+		
+		
+
+		
+
+	</style>
+</head>
+<body>
+
+	<div>
+
+		Home
+
+	</div>
+
+</body>
+</html>
